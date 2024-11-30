@@ -1,19 +1,13 @@
-const flowbite = require("flowbite-react/tailwind");
-
 module.exports = {
-  content: ["./index.html",
-     "./src/**/*.{js,ts,jsx,tsx}",
+  
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
 
-     flowbite.content(),
-
-    
-    
-    ],
+    "node_modules/preline/dist/*.js",
+  ],
   theme: {
     extend: {},
   },
-  plugins: [
-    flowbite.plugin(),
-
-  ],
+  plugins: [require("preline/plugin")],
 };
