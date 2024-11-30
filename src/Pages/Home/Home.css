@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* :root {
+  --primary_font: "Chakra Petch", sans-serif;
+  --secondary_font: "Outfit", sans-serif;
+ 
+ 
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  background: url("../bg2.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -10;
+}
+
+.home-container {
+  width: 100%;
+  height: 100%;
+  /* padding: 25px;
+  overflow: hidden; */
+}
+
+/* nav____________________________ */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-bars {
+  display: none !important;
+  color: #e5edf5;
+  
+  font-size: 2rem;
+  cursor: pointer;
+}
+nav {
+ 
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+  height: 150;
+}
+
+nav ul {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.home-container nav ul li {
+  list-style: none;
+
+  padding-left: 10px;
+}
+
+
+.home-container nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--primary_font);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.home-container nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  padding: 0px 20px ;
+}
+
+/* landing page  left & right */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 0 2.5rem;
+}
+main .right_side {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .left_side {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 550px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.left_side h3 {
+  font-family: var(--secondary_font);
+  color: blanchedalmond;
+}
+.left_side h1 {
+  margin-top: 1rem;
+  color: white;
+  font-size: 4vw;
+  line-height: 60px;
+  font-family: var(--primary_font);
+  padding-bottom: 5px;
+}
+
+.left_side h1 span {
+  color: rgb(144, 31, 31);
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  font-size: 5vw;
+
+  font-family: var(--primary_font);
+}
+.left_side h2 {
+  color: blanchedalmond;
+  font-family: var(--primary_font);
+  font-size: 2rem;
+}
+.left_side p {
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  font-family: var(--secondary_font);
+  width: 75%;
+}
+#element {
+  font-size: 4vh;
+}
+
+/* scroll  */
+
+/* For the whole page */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; /* Scrollbar color */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkred; /* Darker red when hovered */
+}
+
+
+/* button_____________________ */
+
+
+button {
+  cursor: pointer;
+  font-family: var(--primary_font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #000000;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 10px 20px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+button:hover {
+  color: #915151;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+  font-weight:800;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.btn-start {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* padding: 1rem; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.hero {
+  width: 80%;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero img {
+  object-fit: contain;
+  min-width: 250px;
+  max-width: 350px;
+  filter: drop-shadow(0px 1px 7px #ffffff);
+}
+
+/* menu--------------00 */
+
+
+
+
+@media screen and (max-width: 850px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-start {
+
+    justify-content: center;
+  }
+  main .left_side {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 400px;
+    padding-left: 0rem;
+    padding-top: 6rem;
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    display: flex !important;
+    color: #e5edf5;
+    
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .hero {
+    width: 80%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .left_side h2 {
+    text-align: center;
+  }
+
+  .left_side p {
+    width: 100%;
+  }
+  main .right_side {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .left_side {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 400px;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    order: 2;
+}
+.left_side h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  font-size: 6vw;
+  line-height: 40px;
+  font-family: var(--primary_font);
+  padding-bottom: 5px;
+  
+}
+.left_side h1 span {
+  color: rgb(144, 31, 31);
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  font-size: 8vw;
+  font-family: var(--primary_font);
+
+}
+.left_side h3 {
+  font-family: var(--secondary_font);
+  color: blanchedalmond;
+  text-align: center;
+}
+}

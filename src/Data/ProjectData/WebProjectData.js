@@ -1,0 +1,68 @@
+const WebProjectData = [
+    {
+        id: 1,
+        title: 'Trafalgar-DEV',
+        description: 'My project is built using JavaScript, CSS, and HTML, Bootstrap',
+        image: '../../../project images/project16.jpg',
+        code: 'https://github.com/Parminder-singh-97/Trafalgar-website-DEV',
+        live: 'https://parminder-singh-97.github.io/Trafalgar-website-DEV/',
+    },
+    {
+        id: 8,
+        title: 'WhatsChat App',
+        description: 'My project is built using JavaScript, taiwind css, Reactjs',
+        image: '../../../project images/project19.jpg',
+        code: 'https://github.com/Parminder-singh-97/WhatsChat-App',
+        live: 'https://whats-chat-app.vercel.app/',
+    },
+    {
+        id: 2,
+        title: 'LaslesVPN',
+        description: 'My project is built using JavaScript, CSS, and HTML, ReactJS, Bootstrap, AOS animation',
+        image: '../../../project images/project17.png',
+        code: 'https://github.com/Parminder-singh-97/LaslesVPN-website-free',
+        live: 'https://lasles-vpn-website-free.vercel.app/',
+    },
+    {
+        id: 3,
+        title: 'Sun Rises',
+        description: 'My project is built using JavaScript, CSS, and HTML, and it incorporates features from the GSAP library',
+        image: '../../../project images/project1.webp',
+        code: 'https://github.com/Parminder-singh-97/Sun-rises-Landing-Page.git',
+        live: 'https://parminder-singh-97.github.io/Sun-rises-Landing-Page/',
+    },
+    {
+        id: 4,
+        title: 'Taj Mahal',
+        description: 'My project is built using JavaScript, CSS, and HTML, and it incorporates features from the GSAP library',
+        image: '../../../project images/project2.webp',
+        code: 'https://github.com/Parminder-singh-97/TajMehal-website.git',
+        live: 'https://parminder-singh-97.github.io/TajMehal-website/',
+    },
+    {
+        id: 5,
+        title: 'Jai Shri Ram',
+        description: 'My project is built using JavaScript, CSS, and HTML, and it incorporates features from the GSAP library',
+        image: '../../../project images/project3.webp',
+        code: 'https://github.com/Parminder-singh-97/Shri-Ram-Ji-landing-page.git',
+        live: 'https://parminder-singh-97.github.io/Shri-Ram-Ji-landing-page/',
+    },
+    {
+        id: 6,
+        title: 'Design X',
+        description: 'My project is built using JavaScript, CSS, and HTML, and it incorporates features from the GSAP library',
+        image: '../../../project images/project4.webp',
+        code: 'https://github.com/Parminder-singh-97/design-X-Landing-Page.git',
+        live: 'https://parminder-singh-97.github.io/design-X-Landing-Page/',
+    },
+    {
+        id: 7,
+        title: 'Snap',
+        description: 'My project is built using JavaScript, CSS, and HTML, and it incorporates features from the GSAP library',
+        image: '../../../project images/project5.jpg',
+        code: 'https://github.com/Parminder-singh-97/intro-section-with-dropdown-navigation-main',
+        live: 'https://intro-section-with-dropdown-navigation-main-kappa-bay.vercel.app/',
+    },
+];
+
+export default WebProjectData;
