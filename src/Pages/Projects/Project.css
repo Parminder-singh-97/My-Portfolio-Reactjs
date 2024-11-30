@@ -5,11 +5,7 @@
   --secondary_font: "Outfit", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 html,
 body {
   width: 100%;
@@ -17,7 +13,7 @@ body {
 }
 
 body {
-  background: url('../../../bg2.webp') fixed;
+  background: url("../../../bg2.webp") fixed;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -33,8 +29,6 @@ body {
 /* nav____________________________ */
 header {
   width: 100%;
- 
-  
 }
 .active {
   background-color: rgba(194, 20, 20, 0.823);
@@ -42,7 +36,6 @@ header {
 nav {
   width: 100%;
 
-  /* position: fixed; */
 }
 nav ul {
   display: flex;
@@ -101,9 +94,9 @@ nav ul li a:hover {
   box-shadow: -9px -9px 18px #0d0d0d, 9px 9px 18px #353535;
   padding: 1.7rem;
 }
-.about_right h1{
-    text-align: center;
-    padding-bottom: 1.5rem;
+.about_right h1 {
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 .about_left h1 {
   color: white;
@@ -124,8 +117,6 @@ nav ul li a:hover {
 }
 .intro {
   width: 100%;
-  /* background-color: rgb(7, 37, 27); */
-  /* height: 200px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +194,6 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* form___________________ */
@@ -239,11 +229,11 @@ textarea {
   height: 150px;
 }
 /* js project______________ */
-.javaScript_pro{
+.javaScript_pro {
   width: 100%;
 }
 
-.js_container{
+.js_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -252,263 +242,164 @@ textarea {
   justify-content: center;
 }
 
-
-
 /* all button------------------------------- */
 button {
-    padding: 17px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 0;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 10px;
-    transition: all 0.5s ease;
-  }
-  
-  button:hover {
-    /* color: rgb(206, 21, 67); */
-    letter-spacing: 3px;
-    background-color: rgb(206, 21, 67);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(206, 21, 67) 0px 7px 29px 0px;
-    font-weight: 5=900;
-  }
-  
-  button:active {
-    letter-spacing: 3px;
-    background-color: rgb(206, 21, 67);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(206, 21, 67) 0px 0px 0px 0px;
-    transform: translateY(4px);
-    transition: 100ms;
-  }
+  padding: 17px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: all 0.5s ease;
+}
 
+button:hover {
 
-  /* cards---------------------------------- */
+  letter-spacing: 3px;
+  background-color: rgb(206, 21, 67);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(206, 21, 67) 0px 7px 29px 0px;
+  font-weight: 5=900;
+}
 
-  .card {
-    position: relative;
-    width: 270px;
-    aspect-ratio: 16/9;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    /* box-shadow: 0 0 0 5px #ffffff80; */
-    /* transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
-  }
-  
- 
-  
-  .card__image {
-    width: 100%;
-    height: 100%;
-  
-  }
-  .card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-  }
-  
-  .card__title {
-    margin: 0;
-    font-size: 20px;
-    color: #000000;
-    font-weight: 700;
-  }
-  .btns{
-    display: flex;
-    gap: 10px;
-    width: 100%;
-  }
- 
-  
-  .card__description {
-    margin: 10px 0 10px;
-    font-size: 11px;
-    color: #000000;
-    line-height: 1.4;
-  }
-  
-  .card__button {
-   
-    padding: 11px;
-    border-radius: 8px;
-    background: #000000;
-    border: none;
-    color: white;
-    
-  }
-  
-  .secondary {
-    background: transparent;
-    color: #777;
-    border: 1px solid #777;
-  }
-  
-  /* menu--------------00 */
+button:active {
+  letter-spacing: 3px;
+  background-color: rgb(206, 21, 67);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(206, 21, 67) 0px 0px 0px 0px;
+  transform: translateY(4px);
+  transition: 100ms;
+}
 
-/* .menu_box{
-  position: absolute;
+/* cards---------------------------------- */
+
+.card {
+  position: relative;
+  width: 270px;
+  aspect-ratio: 16/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  padding-top: 2rem;
   justify-content: center;
-  flex-direction: column;
-  top: -450px;
-  left: 0;
-  background-color: #ffffff;
-  width: 100vw;
- 
-  height: 60vh;
-  z-index: 10;
-  color: black;
-  border-radius: 5px;
-  transition: all 1s ease-in-out;
+  overflow: hidden;
+  perspective: 1000px;
   
 }
-.cross{
+
+.card__image {
   width: 100%;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  padding-right: 4rem;
+  height: 100%;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
-.fa-xmark{
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
 
-    right: 10;
-    top: 10;
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.menu_box ul{
- color: black;
- display: flex;
- gap: 3rem;
- align-items: center;
- flex-direction: column;
-  
- 
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
 }
-.menu_box ul li{
-list-style: none;
-border-bottom: #516d91;
-  
- 
-}
-.menu_box ul li a{
-  font-size: 4vh;
-  font-family: var(--primary_font);
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
   font-weight: 700;
-  text-transform: uppercase;
- color: black;
-
-  
- 
 }
-.menu_box ul li a:hover{
-  color: red;
-  border-bottom: 4px solid black;
-
-  
- 
+.btns {
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 
+.card__description {
+  margin: 10px 0 10px;
+  font-size: 11px;
+  color: #000000;
+  line-height: 1.4;
+}
 
+.card__button {
+  padding: 11px;
+  border-radius: 8px;
+  background: #000000;
+  border: none;
+  color: white;
+}
 
-.fa-bars{
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  
-} */
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+}
 
+/* menu--------------00 */
 
-
-
-
-
-
-  
 @media screen and (max-width: 888px) {
-
   #about {
     margin: auto;
     position: relative;
-    
+
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-}
+  }
 
-.menu_container{
-  
-  display: flex;
-}
-header{
-  display: none;
-}
+  .menu_container {
+    display: flex;
+  }
+  header {
+    display: none;
+  }
 
-.about_left {
-  color: white;
-  width: 370px;
-  height: 616px;
-  position: relative;
-  top: 6px;
-  border-radius: 10px;
-  border-radius: 21px;
-  border-radius: 11px;
-  background: linear-gradient(315deg, #1e1e1e, #232323);
-  box-shadow: -9px -9px 18px #0d0d0d, 9px 9px 18px #353535;
-}
+  .about_left {
+    color: white;
+    width: 370px;
+    height: 616px;
+    position: relative;
+    top: 6px;
+    border-radius: 10px;
+    border-radius: 21px;
+    border-radius: 11px;
+    background: linear-gradient(315deg, #1e1e1e, #232323);
+    box-shadow: -9px -9px 18px #0d0d0d, 9px 9px 18px #353535;
+  }
 
-
-.about_right{
-  color: white;
+  .about_right {
+    color: white;
     width: 90vw;
     margin-left: 0rem;
     background: linear-gradient(315deg, #1e1e1ee4, #232323);
     box-shadow: -9px -9px 18px #0d0d0d, 9px 9px 18px #353535;
     padding: 1.7rem;
-}
+  }
 }
 
 @media screen and (max-width: 345px) {
-
-
 }
