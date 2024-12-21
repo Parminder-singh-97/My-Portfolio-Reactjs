@@ -1,7 +1,7 @@
 const WebProjectData = [
     {
         id: 9,
-        title: 'Ecommerce-clothes',
+        title: 'E-commerce-clothes',
         description: 'My project is built using Reactjs, Firebase,  redux toolkit, tailwindcss',
         image: '../../../project images/project20.jpg',
         code: 'https://github.com/Parminder-singh-97/e-commerce-clothes',
