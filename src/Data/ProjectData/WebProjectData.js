@@ -1,5 +1,13 @@
 const WebProjectData = [
     {
+        id: 9,
+        title: 'Ecommerce-clothes',
+        description: 'My project is built using Reactjs, Firebase,  redux toolkit, tailwindcss',
+        image: '../../../project images/project20.jpg',
+        code: 'https://github.com/Parminder-singh-97/e-commerce-clothes',
+        live: 'https://e-commerce-clothes-brand.netlify.app/',
+    },
+    {
         id: 1,
         title: 'Trafalgar-DEV',
         description: 'My project is built using JavaScript, CSS, and HTML, Bootstrap',
