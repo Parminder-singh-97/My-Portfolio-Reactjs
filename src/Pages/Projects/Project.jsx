@@ -24,7 +24,7 @@ const Project = () => {
               const { id, title, description, image, code, live } = projects;
 
               return (
-                <div key={key} className="card p1">
+                <div  key={key} className="card p1">
                   <div className="card__image">
                     <img src={image} alt={title} />
                   </div>
