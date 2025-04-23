@@ -14,6 +14,7 @@ const About = () => {
   const [rightBodyComponent, SetRightBodyComponent] = useState("AboutMe");
 
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
+  const [isNavActive,setIsNavActive] = useState('')
 
   const toggleOffcanvas = () => {
     setIsOffcanvasOpen(!isOffcanvasOpen);
@@ -91,7 +92,9 @@ const About = () => {
               </li>
               <li>
                 <Link
-                  className="text-white"
+                  className={` ${
+                    rightBodyComponent === "AboutMe" ? 'text-red-600':'text-white'
+                  }`}
                   to="#"
                   onClick={() => {
                     SetRightBodyComponent("AboutMe");
@@ -102,7 +105,9 @@ const About = () => {
               </li>
               <li>
                 <Link
-                  className="text-white"
+                 className={` ${
+                  rightBodyComponent === "Project" ? 'text-red-600':'text-white'
+                }`}
                   to="#"
                   onClick={() => SetRightBodyComponent("Project")}
                 >
@@ -111,7 +116,9 @@ const About = () => {
               </li>
               <li>
                 <Link
-                  className="text-white py-5"
+                 className={` ${
+                  rightBodyComponent === "Contact" ? 'text-red-600':'text-white'
+                }`}
                   to="#"
                   onClick={() => {
                     return SetRightBodyComponent("Contact");
@@ -121,8 +128,6 @@ const About = () => {
                 </Link>
               </li>
             </ul>
-
-           
           </div>
 
           <div
@@ -151,7 +156,9 @@ const About = () => {
               </li>
               <li>
                 <Link
-                  className="text-white md:text-white"
+                 className={` ${
+                  rightBodyComponent === "AboutMe" ? 'text-red-700 font-extrabold':'text-white'
+                }`}
                   to="#"
                   onClick={() => {
                     SetRightBodyComponent("AboutMe");
@@ -162,7 +169,9 @@ const About = () => {
               </li>
               <li>
                 <Link
-                  className="text-white md:text-white"
+                 className={` ${
+                  rightBodyComponent === "Project" ? 'text-red-700 font-extrabold':'text-white'
+                }`}
                   to="#"
                   onClick={() => SetRightBodyComponent("Project")}
                 >
@@ -171,7 +180,9 @@ const About = () => {
               </li>
               <li>
                 <Link
-                  className="text-white md:text-white py-5"
+                 className={` ${
+                  rightBodyComponent === "Contact" ? 'text-red-700 font-extrabold':'text-white'
+                }`}
                   to="#"
                   onClick={() => {
                     return SetRightBodyComponent("Contact");
