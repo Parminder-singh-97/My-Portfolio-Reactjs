@@ -9,10 +9,14 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WebProjectData from "../../Data/ProjectData/WebProjectData";
 import JavaProjectData from "../../Data/JavaProjectData/JavaProjectData";
+import { motion } from "framer-motion";
 
 const Project = () => {
   return (
-    <div className="project-container">
+    <motion.div className="project-container"
+    initial={{ opacity: 0, scale:0.90, y: -50 }}
+    animate={{ opacity: 1,scale:1, y: 0 }}
+    transition={{ duration: 1.5 }}>
       <section id="about-project ">
         <h1 className="text-orange-800 uppercase text-3xl font-extrabold">
           My Web Projects
@@ -95,7 +99,7 @@ const Project = () => {
           </div>
         </>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

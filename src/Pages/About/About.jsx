@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 import AboutLeftCard from "../../Components/About/AboutLeftCard";
 import AboutMe from "../../Components/About/AboutMe";
 import Project from "../Projects/Project";
 import Contact from "../Contact/Contact";
+import { motion } from "motion/react";
 import "preline";
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
   useEffect(() => {
     const autoCLoseNavOnClick = () => {
       setIsOffcanvasOpen(false);
-      console.log("closed");
+    
     };
 
     autoCLoseNavOnClick();
@@ -43,7 +44,12 @@ const About = () => {
   };
 
   return (
-    <div className="about-container relative">
+    <motion.div
+      className="about-container relative"
+      initial={{ opacity: 0, scale: 0.9, y: -50 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+    >
       {/* Navbar */}
       <nav className="border-gray-200 bg-transparent flex justify-end items-end">
         <div className="flex flex-wrap items-center justify-between p-4">
@@ -79,7 +85,7 @@ const About = () => {
           >
             <ul className="">
               <li>
-                <Link className="text-white" to="/" aria-current="page">
+                <Link className="text-white" to="/Home" aria-current="page">
                   Home
                 </Link>
               </li>
@@ -115,6 +121,8 @@ const About = () => {
                 </Link>
               </li>
             </ul>
+
+           
           </div>
 
           <div
@@ -181,7 +189,7 @@ const About = () => {
         <AboutLeftCard />
         <div className="about_right">{renderComponent()}</div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,11 +9,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import CustomSlider from "../CustomSlider";
 import SkillSlider from "./SkillSlider";
+import { motion } from "motion/react";
 
 const AboutMe = () => {
   return (
-    <>
-      <div className="about_me" id="about_me">
+    <motion.div  initial={{ opacity: 0, scale:0.90, y: -50 }}
+    animate={{ opacity: 1,scale:1, y: 0 }}
+    transition={{ duration: 1.5 }}>
+      <div className="about_me" id="about_me"
+     >
         <h1 className="aboutMe_1 text-orange-800 uppercase text-3xl font-extrabold">
           About me
         </h1>
@@ -87,7 +91,7 @@ const AboutMe = () => {
           <SkillSlider/>
           <hr className="mt-10" />
         </div>
-    </>
+    </motion.div>
   );
 };
 

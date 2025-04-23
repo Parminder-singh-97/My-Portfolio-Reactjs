@@ -7,6 +7,7 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "motion/react";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -51,7 +52,9 @@ function Contact() {
 
   return (
     <>
-      <div className="contact-container">
+      <motion.div className="contact-container" initial={{ opacity: 0, scale:0.90, y: -50 }}
+    animate={{ opacity: 1,scale:1, y: 0 }}
+    transition={{ duration: 1.5 }}>
         <section id="contact-about">
           <h1 className="text-orange-800 uppercase text-3xl font-extrabold">
             Contact Me
@@ -88,7 +91,7 @@ function Contact() {
             <button type="submit">Submit</button>
           </form>
         </section>
-      </div>
+      </motion.div>
     </>
   );
 }

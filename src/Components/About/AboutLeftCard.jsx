@@ -8,12 +8,16 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { motion } from 'motion/react';
 
 
 const AboutLeftCard = () => {
   return (
     <>
-     <div className="about_left">
+     <motion.div className="about_left
+     "  initial={{ opacity: 0, scale:0.90, y: -50 }}
+     animate={{ opacity: 1,scale:1, y: 0 }}
+     transition={{ duration: 2.5 }}>
           <div className="user_img about_1">
             <img src="../../../user1.webp" alt="User" />
           </div>
@@ -51,7 +55,7 @@ const AboutLeftCard = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-        </div>
+        </motion.div>
       
     </>
   )
